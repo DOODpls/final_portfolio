@@ -11,12 +11,9 @@ app.get('/', function(request, response){
   response.render('index')
 })
 
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function (err, response) {
-  console.error(err.body)
-  response.status(404).render('404');
-})
 
 const PORT = process.env.PORT || 3000;
 
