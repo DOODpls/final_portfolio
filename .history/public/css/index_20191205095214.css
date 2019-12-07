@@ -1,0 +1,10 @@
+@import url('./reset.css');
+.nav-container{
+  display: flex;
+  flex-direction: row;
+}
+.nav-list{
+  display: flex;
+  text-decoration: none;
+  list-style-type: nonde;
+}

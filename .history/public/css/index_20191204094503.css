@@ -1,0 +1,5 @@
+@import url('./reset.css')
+.nav-container{
+  display: flex;
+  flex-direction: row;
+}

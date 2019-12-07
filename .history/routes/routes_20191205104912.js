@@ -3,7 +3,7 @@ const pgrtrs = express.Router();
 const pagesInfo = require('../page_info');
 
 pgrtrs.get('/', function(request, response){
-  response.render('index', pagesInfo.index)
+  response.render('index', pagesInfo)
 })
 
 module.exports = pgrtrs;

@@ -1,0 +1,20 @@
+@import url('./reset.css');
+.nav-container{
+  display: flex;
+  flex-direction: row;
+}
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+}
+.pg-logo{
+  flex: 50%;
+}
+.pg-logo-link{
+  text-decoration: none;
+}
+.nav-list-cont{
+  flex: 50%;
+}
