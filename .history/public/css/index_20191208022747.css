@@ -1,0 +1,125 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 80%;
+  background-color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+.nav-full-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+}
+.logo{
+  height: 60px;
+  width: 60px;
+}
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Work Sans', sans-serif;
+  width: 410px;
+}
+.nav-list > li{
+  margin: 10px;
+}
+.pg-logo{
+  flex: 60%;
+  margin: auto;
+}
+.pg-logo-link{
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+.nav-list-cont{
+  flex: 40%;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin: auto;
+}
+.banner-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+.inner-container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.webdev{
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+}
+.hamburger{
+  display: none;
+}
+.inner-container-text{
+  color: rgb(0, 0, 0);
+  font-family: 'Staatliches', cursive;
+  font-size: 100px;
+}
+.intro-outer-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  polygon(5px 297px,4px 298px,4px 300px,3px 300px,3px 302px,1px 302px,1px 1px,3px 1px,1px 1px,954px 1px,961px 322px,961px 323px,960px 323px,960px 324px,959px 325px,959px 326px,958px 326px,958px 328px,957px 328px,955px 332px,954px 332px,954px 333px,953px 333px,953px 335px,952px 335px,952px 336px,951px 336px,951px 338px,950px 338px,950px 344px,949px 344px,949px 351px,948px 353px,948px 354px,947px 354px,947px 356px,946px 357px,946px 358px,945px 359px,945px 361px,944px 362px,944px 363px,943px 363px,943px 364px,942px 366px,941px 366px,940px 367px,940px 368px,939px 369px,939px 370px,938px 371px,938px 372px,935px 375px,935px 376px,934px 377px,934px 378px,933px 379px,932px 381px,931px 382px,931px 383px,930px 383px,930px 384px,929px 385px,929px 386px,928px 387px,927px 387px,926px 388px,926px 390px,925px 390px,925px 391px,924px 392px,924px 394px,923px 395px,922px 395px,921px 396px,921px 397px,920px 398px,919px 398px,919px 399px,918px 399px,918px 400px,907px 400px,907px 399px,905px 399px,905px 398px,904px 398px,904px 397px,902px 397px,902px 396px,900px 396px,900px 395px,899px 395px,898px 394px,898px 393px,897px 393px,896px 392px,895px 392px,894px 391px,892px 391px,889px 390px,888px 389px,886px 389px,883px 388px,882px 387px,880px 387px,879px 385px,878px 385px,877px 384px,875px 384px,875px 383px,874px 383px,874px 382px,873px 382px,873px 381px,872px 380px,871px 380px,871px 379px,870px 379px,870px 378px,869px 378px,869px 377px,868px 377px,868px 376px,867px 376px,867px 375px,866px 375px,865px 374px,864px 374px,862px 372px,857px 370px,852px 367px,849px 366px,847px 365px,842px 362px,841px 362px,837px 360px,832px 360px,831px 361px,830px 361px,830px 362px,826px 366px,826px 367px,825px 368px,824px 370px,821px 373px,821px 374px,819px 376px,819px 378px,818px 378px,816px 381px,815px 383px,815px 384px,814px 384px,813px 386px,813px 387px,810px 390px,809px 390px,809px 391px,807px 393px,807px 394px,805px 396px,804px 396px,804px 397px,802px 399px,801px 399px,801px 400px,800px 401px,800px 402px,799px 402px,799px 403px,798px 403px,798px 404px,796px 405px,796px 406px,795px 406px,794px 407px,794px 408px,793px 409px,791px 410px,790px 412px,788px 413px,787px 415px,783px 419px,781px 419px,781px 420px,745px 420px,744px 419px,741px 418px,739px 417px,737px 417px,729px 413px,728px 413px,726px 411px,726px 410px,725px 409px,724px 409px,723px 408px,722px 408px,721px 407px,720px 405px,719px 405px,716px 402px,715px 402px,715px 400px,714px 400px,712px 399px,712px 398px,711px 398px,711px 397px,710px 397px,710px 396px,707px 396px,707px 395px,706px 395px,705px 394px,704px 394px,704px 392px,702px 391px,701px 391px,699px 390px,698px 390px,696px 388px,695px 388px,693px 386px,690px 383px,689px 383px,688px 382px,687px 382px,687px 381px,686px 381px,686px 380px,685px 379px,685px 378px,684px 377px,683px 377px,683px 376px,682px 374px,681px 373px,681px 371px,678px 368px,677px 366px,677px 365px,675px 363px,675px 362px,674px 360px,673px 359px,673px 358px,672px 357px,670px 356px,669px 355px,669px 353px,667px 351px,666px 349px,665px 348px,663px 347px,662px 345px,662px 344px,661px 343px,660px 343px,659px 342px,658px 340px,657px 340px,655px 338px,654px 338px,653px 337px,653px 336px,652px 336px,650px 335px,649px 334px,647px 333px,645px 331px,641px 329px,639px 327px,636px 325px,634px 323px,632px 322px,629px 321px,628px 319px,624px 319px,622px 318px,615px 318px,614px 319px,612px 319px,611px 320px,610px 320px,609px 321px,607px 321px,606px 322px,605px 322px,604px 323px,604px 324px,603px 325px,602px 325px,601px 326px,600px 326px,600px 327px,599px 327px,597px 329px,596px 329px,593px 332px,592px 332px,592px 333px,591px 333px,590px 334px,590px 335px,589px 335px,588px 336px,587px 338px,586px 338px,586px 339px,585px 339px,585px 340px,584px 340px,584px 342px,583px 342px,582px 343px,582px 344px,577px 349px,577px 350px,574px 353px,574px 354px,572px 356px,571px 356px,571px 357px,570px 357px,569px 358px,567px 359px,567px 360px,566px 360px,564px 361px,564px 362px,563px 364px,562px 364px,560px 365px,558px 367px,556px 368px,555px 369px,553px 370px,547px 370px,547px 369px,545px 369px,545px 368px,543px 368px,542px 367px,541px 367px,541px 366px,540px 365px,540px 364px,538px 364px,538px 363px,537px 363px,537px 362px,536px 362px,536px 360px,535px 359px,535px 358px,534px 357px,532px 356px,532px 354px,531px 353px,530px 351px,530px 350px,529px 349px,529px 345px,528px 345px,528px 340px,527px 338px,527px 336px,526px 333px,525px 332px,525px 330px,523px 322px,522px 319px,521px 315px,518px 312px,517px 312px,517px 310px,515px 310px,515px 312px,513px 312px,513px 314px,512px 314px,512px 315px,511px 315px,511px 326px,510px 328px,510px 338px,509px 339px,509px 343px,508px 344px,508px 345px,507px 349px,507px 354px,506px 355px,506px 357px,505px 357px,505px 368px,504px 372px,504px 374px,503px 378px,503px 381px,502px 382px,502px 386px,501px 387px,501px 393px,500px 394px,499px 396px,498px 397px,498px 398px,495px 401px,495px 402px,492px 405px,491px 405px,490px 406px,490px 407px,489px 408px,488px 408px,487px 409px,487px 410px,483px 412px,481px 412px,480px 413px,477px 413px,475px 414px,460px 414px,459px 413px,452px 413px,449px 412px,442px 412px,440px 411px,424px 411px,423px 410px,419px 410px,418px 409px,416px 409px,415px 408px,413px 408px,412px 407px,411px 407px,410px 406px,410px 405px,408px 405px,407px 404px,403px 404px,403px 403px,400px 403px,400px 402px,398px 402px,398px 401px,394px 401px,393px 400px,390px 400px,389px 399px,386px 399px,385px 398px,384px 398px,382px 396px,380px 396px,380px 395px,379px 395px,378px 393px,377px 392px,376px 390px,374px 389px,370px 385px,370px 384px,369px 383px,366px 381px,365px 380px,361px 377px,360px 377px,359px 375px,358px 375px,358px 374px,356px 374px,355px 373px,355px 372px,353px 370px,353px 369px,352px 369px,349px 366px,349px 365px,348px 365px,346px 363px,346px 362px,345px 362px,344px 361px,344px 360px,342px 358px,342px 357px,341px 356px,339px 356px,339px 354px,338px 354px,337px 353px,337px 352px,336px 351px,336px 350px,335px 349px,334px 349px,334px 348px,333px 348px,333px 347px,332px 346px,332px 345px,331px 345px,331px 344px,330px 344px,330px 343px,329px 343px,328px 342px,328px 341px,326px 339px,324px 336px,322px 335px,321px 333px,319px 331px,310px 331px,306px 333px,297px 333px,296px 334px,294px 334px,292px 335px,291px 335px,289px 336px,288px 337px,287px 337px,285px 338px,284px 338px,283px 339px,281px 339px,281px 341px,280px 343px,279px 344px,278px 346px,277px 346px,277px 347px,276px 348px,276px 350px,275px 351px,275px 354px,274px 354px,274px 357px,273px 357px,272px 360px,271px 360px,270px 361px,270px 363px,269px 364px,267px 364px,267px 365px,266px 365px,265px 367px,264px 367px,263px 368px,262px 370px,261px 370px,260px 371px,259px 371px,259px 372px,257px 372px,257px 373px,256px 373px,255px 374px,254px 374px,253px 375px,240px 375px,239px 374px,236px 374px,235px 373px,233px 373px,232px 371px,231px 371px,231px 370px,229px 370px,228px 369px,227px 369px,227px 368px,226px 368px,226px 367px,225px 367px,225px 365px,224px 365px,224px 364px,223px 364px,223px 363px,222px 363px,221px 362px,221px 360px,220px 360px,220px 357px,219px 356px,219px 350px,218px 349px,218px 346px,217px 343px,217px 340px,216px 340px,216px 338px,215px 337px,215px 335px,214px 334px,214px 333px,213px 332px,213px 330px,211px 328px,211px 327px,210px 326px,210px 325px,208px 324px,208px 323px,207px 322px,207px 321px,206px 320px,204px 319px,200px 315px,195px 315px,195px 316px,193px 316px,193px 317px,192px 318px,191px 318px,191px 320px,190px 321px,190px 322px,188px 322px,188px 323px,187px 323px,187px 324px,186px 324px,186px 326px,185px 326px,185px 328px,184px 328px,183px 330px,181px 331px,181px 332px,180px 333px,180px 334px,179px 334px,179px 335px,178px 336px,178px 338px,176px 340px,174px 343px,173px 344px,173px 346px,172px 346px,170px 349px,166px 358px,162px 364px,162px 365px,161px 366px,161px 367px,160px 367px,160px 369px,159px 369px,159px 370px,158px 371px,158px 372px,157px 375px,156px 376px,155px 378px,152px 381px,152px 382px,151px 382px,150px 384px,149px 385px,149px 387px,148px 387px,147px 388px,146px 388px,145px 389px,145px 390px,144px 391px,144px 392px,143px 392px,143px 393px,142px 393px,142px 394px,141px 394px,140px 395px,140px 396px,139px 396px,138px 397px,138px 398px,137px 399px,137px 400px,135px 400px,135px 402px,133px 402px,133px 404px,132px 404px,132px 405px,131px 405px,131px 406px,130px 406px,130px 407px,127px 410px,126px 412px,122px 416px,122px 417px,120px 417px,119px 418px,118px 418px,117px 419px,114px 419px,113px 420px,59px 420px,59px 419px,57px 419px,57px 418px,56px 418px,56px 417px,53px 417px,53px 416px,52px 416px,52px 415px,50px 415px,48px 413px,48px 412px,47px 412px,46px 411px,45px 411px,45px 410px,43px 410px,43px 408px,42px 408px,41px 407px,40px 407px,40px 406px,39px 405px,39px 404px,38px 404px,38px 402px,37px 402px,36px 401px,35px 399px,34px 398px,34px 395px,33px 395px,33px 394px,32px 393px,31px 390px,31px 388px,30px 387px,29px 387px,29px 386px,28px 385px,28px 380px,27px 380px,27px 374px,26px 374px,26px 367px,25px 366px,25px 357px,24px 357px,24px 352px,23px 352px,23px 348px,22px 348px,22px 339px,21px 339px,21px 333px,20px 333px,20px 328px,19px 328px,19px 324px,18px 323px,18px 321px,17px 321px,17px 318px,16px 318px,16px 317px,15px 317px,14px 315px,14px 313px,13px 313px,13px 312px,12px 311px,12px 310px,11px 308px,10px 307px,9px 305px,7px 303px,7px 301px,6px 300px,6px 299px,5px 298px,5px 297px);
+}
+.intro-inner-cont{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro{
+  font-family: 'Staatliches', cursive;
+  font-size: 50px;
+}
+@media screen and (max-width: 800px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-top: 50px;
+  }
+  .nav-list-ham{
+    width: 300px;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    height: 100%;
+    background-color: black;
+    transition: .5s;
+  }
+  .hamburger{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top:35px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  .nav-list-ham{
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.class2{
+  visibility: hidden;
+  position: relative;
+  left: -400px;
+  transition: .3s;
+  font-family: 'Staatliches', cursive;
+}
+.class1{
+  visibility: visible;
+  left: 0px;
+  transition: .3s;
+  position: relative;
+  font-family: 'Staatliches', cursive;
+}
+.inner-container-text{
+  color: rgb(0, 0, 0);
+  font-family: 'Staatliches', cursive;
+  font-size: 60px;
+  visibility: hidden;
+  position: relative;
+  left: -400px;
+  transition: .3s;
+}
+.inner-container-text2{
+  color: rgb(0, 0, 0);
+  font-family: 'Staatliches', cursive;
+  font-size: 60px;
+  visibility: visible;
+  left: 0px;
+  transition: .3s;
+  position: relative;
+}
