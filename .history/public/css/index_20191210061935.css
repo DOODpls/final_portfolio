@@ -345,6 +345,7 @@
     transform: scaleX(-1);
   }
   .intro-inner-cont{
+    overflow: hidden;
     flex-flow: column-reverse;
   }
   .intro-outer-cont{

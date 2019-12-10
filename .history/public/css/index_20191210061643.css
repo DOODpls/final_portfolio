@@ -341,14 +341,10 @@
     height: 1000px;
     width: 120vw;
     opacity: .5;
-    position: static;
     transform: scaleX(-1);
   }
   .intro-inner-cont{
-    flex-flow: column-reverse;
-  }
-  .intro-outer-cont{
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 

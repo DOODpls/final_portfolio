@@ -339,16 +339,11 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 1000px;
-    width: 120vw;
+    width: 80vw;
+    position: absolute; 
+    left: 0;
     opacity: .5;
-    position: static;
     transform: scaleX(-1);
-  }
-  .intro-inner-cont{
-    flex-flow: column-reverse;
-  }
-  .intro-outer-cont{
-    overflow: hidden;
   }
 }
 
