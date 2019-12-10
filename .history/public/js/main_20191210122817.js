@@ -12,7 +12,7 @@ $(document).ready(function(){
 var ourScene = new ScrollMagic.Scene({
     triggerElement: '#skills-flex'
   })
-  .setClassToggle('#skills-logo-desc', 'fade-in')
+  .setClassToggle('skills-logo-desc', 'fade-in')
   .addIndicators()
   .addTo(controller);
 

@@ -25,6 +25,7 @@ function childnum(){
         }
         childrens[i].id = "proj" + i;
   }
+      
 }
 childnum();
 

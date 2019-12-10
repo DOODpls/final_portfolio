@@ -100,7 +100,10 @@
   transform: translateY(50px);
   transition: all .5s ease-out;
 }
-
+.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
 .skills-outer-cont{
   width: 100%;
   display: flex;
@@ -123,9 +126,6 @@
   align-items: center;
   flex-direction: column;
   margin: 30px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all .5s ease-out;
 }
 .skill-logo{
   font-size: 60px;
@@ -150,10 +150,6 @@
   width: 60px;
   height: 60px;
   border-radius: 25%;
-}
-.fade-in{
-  opacity: 1;
-  transform: translateY(0);
 }
 /* ********************************************************** */
 
@@ -414,11 +410,5 @@
   }
   .qoute{
     font-size: 5vw;
-  }
-  .skills-outer-cont{
-    height: auto;
-  }
-  .top-banner, .top-banner-projects{
-    font-size: 15vw;
   }
 }

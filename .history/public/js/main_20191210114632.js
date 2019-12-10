@@ -8,11 +8,8 @@ $(document).ready(function(){
   .setClassToggle('#top-banner', 'fade-in')
   .addIndicators()
   .addTo(controller);
-
-var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#skills-flex'
-  })
-  .setClassToggle('#skills-logo-desc', 'fade-in')
+  
+  .setClassToggle('#skills-flex', 'fade-in')
   .addIndicators()
   .addTo(controller);
 

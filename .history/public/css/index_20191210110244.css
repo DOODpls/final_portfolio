@@ -100,7 +100,10 @@
   transform: translateY(50px);
   transition: all .5s ease-out;
 }
-
+.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
 .skills-outer-cont{
   width: 100%;
   display: flex;
@@ -123,9 +126,6 @@
   align-items: center;
   flex-direction: column;
   margin: 30px;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all .5s ease-out;
 }
 .skill-logo{
   font-size: 60px;
@@ -150,10 +150,6 @@
   width: 60px;
   height: 60px;
   border-radius: 25%;
-}
-.fade-in{
-  opacity: 1;
-  transform: translateY(0);
 }
 /* ********************************************************** */
 
@@ -374,31 +370,15 @@
 }
 
 @media screen and (max-width: 500px) {
+  .skills-outer-cont{
+    height: auto;
+  }
   .skills-inner-cont{
     margin-top: 100px;
     margin-bottom: 100px;
   }
   .qoute{
     text-align: center;
-  }
-  .skill-logo{
-  font-size: 40px;
-  height: 50px;
-  width: 50px;
-  }
-  .skills-logo-desc{
-    margin: 5px;
-  }
-  .skills-flex{
-    width: 80%;
-  }
-  .external-logo{
-    width: 35px;
-    height: 35px;
-    border-radius: 25%;
-  }
-  .skill-description{
-    font-size: 12px;
   }
 }
 
@@ -414,11 +394,5 @@
   }
   .qoute{
     font-size: 5vw;
-  }
-  .skills-outer-cont{
-    height: auto;
-  }
-  .top-banner, .top-banner-projects{
-    font-size: 15vw;
   }
 }

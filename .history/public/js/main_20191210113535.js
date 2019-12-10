@@ -9,13 +9,6 @@ $(document).ready(function(){
   .addIndicators()
   .addTo(controller);
 
-var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#skills-flex'
-  })
-  .setClassToggle('#skills-logo-desc', 'fade-in')
-  .addIndicators()
-  .addTo(controller);
-
   var x = projs.children.length;
   
   for(i = 0; i<= x; i++){

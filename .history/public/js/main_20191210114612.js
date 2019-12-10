@@ -10,9 +10,9 @@ $(document).ready(function(){
   .addTo(controller);
 
 var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#skills-flex'
+    triggerElement: '#top-banner'
   })
-  .setClassToggle('#skills-logo-desc', 'fade-in')
+  .setClassToggle('#skills-flex', 'fade-in')
   .addIndicators()
   .addTo(controller);
 
