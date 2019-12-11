@@ -1,0 +1,15 @@
+.blog-outer-cont{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.blog-inner-cont{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blogcontainer{
+  width: auto;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head") %>
+<body>
+    <%- include("partials/header") %>
+ <div id="markdown">
+
+  <% 
+  
+  let a = document.querySelector("#a")
+  var converter = new showdown.Converter();
+  var text = '# hello, markdown!';
+  a.innerHTML = converter.makeHtml(text);
+  
+  %>
+
+ <p id="a"></p>
+  
+ </div>
+  <%- include("partials/footer") %>
+</body>
+<%- include("partials/scripts") %>
+</html>

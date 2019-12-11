@@ -1,0 +1,20 @@
+<div class="project-outer-cont">
+  <div class="project-inner-cont">
+    <div class="top-banner-projects" id="top-banner-projects">Projects</div>
+    <span class="anchor" id="project-section"></span>
+      <div class="projects-flex">
+        <% pginfo.projects.forEach(function(iter){ %>
+        <div class="project-box">
+          <div class="project-preview"><iframe src="<%= iter.url %>" width="100%" height="100%"></iframe></div>
+          <div class="project-name">
+            <div class="projdescflx">
+              <h2><%= iter.title %></h2>
+              <p><%= iter.description %></p>
+            </div>
+            
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>

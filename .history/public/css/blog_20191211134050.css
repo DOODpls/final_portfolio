@@ -1,0 +1,13 @@
+.blog-outer-cont{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.blog-outer-cont{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogcontainer{
+}

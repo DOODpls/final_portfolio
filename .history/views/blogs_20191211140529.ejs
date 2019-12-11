@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head") %>
+<body>
+  <%- include("partials/header") %>
+  <div class="banner-container">
+      <div class="inner-container">
+        <div class="inner-container-text" id="inner-container-text-id"> B</div>
+        <div id="webdev" class="webdev" onscroll="scroll()">Web Developer</div>
+      </div>
+    </div>
+    <div class="blog-outer-cont">
+      <div class="blog-inner-cont">
+        <h1>Latest Blogs</h1>
+        <% blogss.slice().reverse().forEach(function(items){ %>
+          <div class="blogcontainer">
+            <p class="blog-date"><%= items.date %></p>
+            <h2 class="blog-title"><%= items.title %></h2>
+            <p class="blog-content"><%= items.blog_cont %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  <%- include("partials/footer") %>
+</body>
+<%- include("partials/scripts") %>
+</html>

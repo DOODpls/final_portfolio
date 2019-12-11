@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head") %>
+<body>
+    <%- include("partials/header") %>
+ <div id="markdown">
+  <%
+
+  var converter = new showdown.Converter(),
+    text      = '# hello, markdown!',
+    html      = converter.makeHtml(text);
+
+   
+  %>
+ <p id="<%= a %>"></p>
+  
+ </div>
+  <%- include("partials/footer") %>
+</body>
+<%- include("partials/scripts") %>
+</html>

@@ -1,0 +1,17 @@
+.blog-outer-cont{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.blog-inner-cont{
+  width: 80%;
+  display: flex;
+  
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.blogcontainer{
+  width: auto;
+  margin: 20px;
+}
