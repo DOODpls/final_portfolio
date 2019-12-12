@@ -1,0 +1,73 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.passworddiv{
+  display: flex;
+  margin-bottom: 20px;
+}
+.adminlogin{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+.passworddiv > p {
+  margin-right: 20px;
+}
+
+.adminform{
+  background-color: coral;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.password-submit{
+  width: 70px;
+  position: relative;
+  right: -188px;
+}
+
+
+
+
+.post-inner-cont{
+  display: flex;
+  flex-direction: column;
+}
+.post-container{
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.blogpost-outer-container{
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.addnew{
+  width: 400px;
+
+}
+.part-cont{
+  display: flex;
+}
+
+
+
+.admin-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adminform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blogcontent{
+  white-space: pre;
+}

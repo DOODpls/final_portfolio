@@ -1,0 +1,23 @@
+.post-outer-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post-inner-cont{
+  width: 80%;
+}
+.post-content{
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  white-space: pre;
+}
+.post-container{
+  white-space: pre-wrap;
+}
+.invitext{
+  white-space: pre-wrap;
+  position: absolute;
+  visibility: hidden;
+  z-index: -92929;
+}
