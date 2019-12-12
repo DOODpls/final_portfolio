@@ -1,0 +1,11 @@
+.post-outer-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post-inner-cont{
+  width: 80%;
+}
+.post-content{
+  width: 100%;
+}

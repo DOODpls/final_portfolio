@@ -1,0 +1,16 @@
+.post-outer-cont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post-inner-cont{
+  width: 80%;
+}
+.post-content{
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.invitext{
+  visibility: hidden;
+}
