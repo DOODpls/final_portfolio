@@ -42,6 +42,8 @@
 .blogpost-outer-container{
   flex: 70%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 50px;
 }

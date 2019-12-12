@@ -35,15 +35,9 @@
 }
 .post-container{
   flex: 30%;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
 }
 .blogpost-outer-container{
   flex: 70%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
 }
 
 
