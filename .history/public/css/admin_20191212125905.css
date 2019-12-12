@@ -1,0 +1,40 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+.passworddiv{
+  display: flex;
+  margin-bottom: 20px;
+}
+.adminlogin{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.passworddiv > p {
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.admin-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adminform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blogcontent{
+  white-space: pre;
+}
