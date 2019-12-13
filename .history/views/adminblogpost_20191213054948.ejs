@@ -35,6 +35,10 @@
                 <input type="text" name="blogslug" id="blogslug" class="blogslug" readonly="readonly" value="<%= blogpost.slug %>" required>
               </div>
               <div>
+                <legend>Old Slug</legend>
+                <input type="text" name="oldslug" id="oldslug" class="oldslug" readonly="readonly" value="<%= blogpost.slug %>" required>
+              </div>
+              <div>
                 <legend>Content</legend>
                 <textarea name="blogcontent" id="blogcontent" class="blogcontent"  cols="30" rows="10" required><%= blogpost.blog_cont %></textarea>
               </div>

@@ -13,11 +13,10 @@
 }
 .post-container{
   white-space: pre-wrap;
-  overflow: hidden;
 }
 .invitext{
   white-space: pre;
+  position: absolute;
   visibility: hidden;
   overflow: scroll;
-  height: 1px;
 }

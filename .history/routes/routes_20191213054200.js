@@ -52,16 +52,22 @@ pgrtrs.get('/admin/:slug', async function(request,response){
   const blogpost = await bloglist
   .where('slug', request.params.slug);
     
+  fs.readFile('./public/blogs/'+ blogpost[0].slug +'.md', function(err, buf) {
+    const result = buf.toString();
     response.render('adminblogpost', {
       blogpost: blogpost[0],
+      blogcont: result,
       title: blogpost[0].title,
       pginfo: pagesInfo.index
     })
+  });
 })
 
 pgrtrs.get('/blogs/:slug', async function(request,response){
   const blogpost = await bloglist
   .where('slug', request.params.slug);
+    
+  fs.readFile('./public/blogs/'+ blogpost[0].slug +'.md', function(err, buf) {
     const result = md.render(blogpost[0].blog_cont);
     response.render('blogposts', {
       blogpost: blogpost[0],
@@ -69,14 +75,18 @@ pgrtrs.get('/blogs/:slug', async function(request,response){
       title: blogpost[0].title,
       pginfo: pagesInfo.index
     })
+  });
 })
 
 pgrtrs.post('/admin/deleted', async function(request, response){
   const deleted = await bloglist.find({_id: request.body.blogid});
   console.log(request.body.oldslug)
   bloglist.deleteOne({ _id: deleted[0]._id }, function (err){
+    fs.unlink('./public/blogs/'+ request.body.oldslug +'.md', function (err) {
       if (err) return handleError(err);
       response.redirect('/admin');
+      console.log('File deleted!');
+  }); 
   })
 })
 
@@ -101,8 +111,15 @@ pgrtrs.post('/admin/updated', async function(request, response){
 
   bloglist.updateOne({ "_id": deleted[0]._id }, {$set: {"_id" : deleted[0]._id, "title": blogtitle, "blog_summary": summary,"blog_cont": blog, "date": date, "slug": newslug}} , { upsert:true } ,function (err){
       
-    if (err) return handleError(err);
-    response.redirect('/admin');
+    
+    fs.unlink('./public/blogs/'+ request.body.oldslug +'.md', function (err) {
+      fs.appendFile('./public/blogs/'+request.body.blogslug+".md", request.body.blogcontent , function (err) {
+        if (err) return handleError(err);
+      response.redirect('/admin');
+      console.log('File deleted!');
+     });
+      
+  }); 
   })
 })
 
@@ -125,9 +142,12 @@ pgrtrs.post('/admin/posted', async function(request, response){
   );
   newpost.save(function (err, newpost){
 
+    fs.appendFile('./public/blogs/'+newslug+".md", blog , function (err) {
       if (err) return handleError(err);
     response.redirect('/admin');
+    console.log('File added!');
    });
+  })
 })
 
 module.exports = pgrtrs;

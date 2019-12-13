@@ -12,12 +12,11 @@
   margin-bottom: 100px;
 }
 .post-container{
-  white-space: pre-wrap;
-  overflow: hidden;
+  white-space: pre;
 }
 .invitext{
   white-space: pre;
+  position: absolute;
   visibility: hidden;
-  overflow: scroll;
-  height: 1px;
+  z-index: -92929;
 }

@@ -54,6 +54,7 @@ pgrtrs.get('/admin/:slug', async function(request,response){
     
     response.render('adminblogpost', {
       blogpost: blogpost[0],
+      blogcont: result,
       title: blogpost[0].title,
       pginfo: pagesInfo.index
     })
@@ -77,6 +78,7 @@ pgrtrs.post('/admin/deleted', async function(request, response){
   bloglist.deleteOne({ _id: deleted[0]._id }, function (err){
       if (err) return handleError(err);
       response.redirect('/admin');
+      console.log('File deleted!');
   })
 })
 
@@ -101,8 +103,9 @@ pgrtrs.post('/admin/updated', async function(request, response){
 
   bloglist.updateOne({ "_id": deleted[0]._id }, {$set: {"_id" : deleted[0]._id, "title": blogtitle, "blog_summary": summary,"blog_cont": blog, "date": date, "slug": newslug}} , { upsert:true } ,function (err){
       
-    if (err) return handleError(err);
-    response.redirect('/admin');
+        if (err) return handleError(err);
+      response.redirect('/admin');
+      console.log('File deleted!');
   })
 })
 
@@ -127,6 +130,7 @@ pgrtrs.post('/admin/posted', async function(request, response){
 
       if (err) return handleError(err);
     response.redirect('/admin');
+    console.log('File added!');
    });
 })
 

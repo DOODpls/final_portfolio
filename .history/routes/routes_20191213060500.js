@@ -77,6 +77,7 @@ pgrtrs.post('/admin/deleted', async function(request, response){
   bloglist.deleteOne({ _id: deleted[0]._id }, function (err){
       if (err) return handleError(err);
       response.redirect('/admin');
+      console.log('File deleted!');
   })
 })
 
@@ -103,6 +104,7 @@ pgrtrs.post('/admin/updated', async function(request, response){
       
     if (err) return handleError(err);
     response.redirect('/admin');
+    console.log('File deleted!');
   })
 })
 
@@ -127,6 +129,7 @@ pgrtrs.post('/admin/posted', async function(request, response){
 
       if (err) return handleError(err);
     response.redirect('/admin');
+    console.log('File added!');
    });
 })
 

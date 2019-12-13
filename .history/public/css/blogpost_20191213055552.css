@@ -17,7 +17,8 @@
 }
 .invitext{
   white-space: pre;
+  position: absolute;
   visibility: hidden;
-  overflow: scroll;
-  height: 1px;
+  z-index: -92929;
+  width: 2000px;
 }
