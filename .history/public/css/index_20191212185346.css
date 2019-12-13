@@ -411,7 +411,6 @@ html{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0;
 }
 .footer-social > li{
   font-size: 30px;
@@ -601,7 +600,7 @@ a{
     width: 80%;
   }
   .footer-social{
-    padding-left: 0;
+    margin-left: 0;
   }
   .footer-social > li{
     font-size: 6vw;

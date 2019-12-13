@@ -61,6 +61,7 @@ html{
   background-color: black;
   transition: .5s;
   color: white;
+  height: 50px;
 }
 .awhite{
   color: white;
