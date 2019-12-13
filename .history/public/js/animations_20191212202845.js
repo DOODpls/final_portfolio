@@ -30,6 +30,7 @@ try{
 function childnum(){
   var x = projs.children.length;
   var childrens = [].slice.call(projs.children);
+  console.log(childrens);
   for(i=0; i <= x; i++){
     if(i % 2 == 0){
         try{
@@ -51,22 +52,12 @@ try{
 
 
 var i;
-try{
-  var divs = document.getElementsById('#blog-content');
-}catch{
-  console.log("null")
-}
-
-try{
-  for(i=0;i<divs.length;i++) {
-    if(divs[i].className == 'blog-content') {
-      divs[i].innerHTML = divs[i].innerHTML.substring(0,300) + '<a href="#">Read more</a>';
-    }
+var divs = document.getElementsById('#blog-content');
+for(i=0;i<divs.length;i++) {
+  if(divs[i].className == 'blog-content') {
+    divs[i].innerHTML = divs[i].innerHTML.substring(0,300) + '<a href="#">Read more</a>';
   }
-}catch{
-  console.log("null")
 }
-
 
 function slugify(string) { //https://medium.com/@mhagemann/the-ultimate-way-to-slugify-a-url-string-in-javascript-b8e4a0d849e1
   const a = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;'
@@ -88,10 +79,6 @@ function slugthis(){
   document.getElementById('blogslug').value = slugify(blogtitle.value);
 }
 
-
-$(function(){
-  $('.js-tilt').tilt({
-    scale: 1.1,
-    speed: 2000
-})
+$('.js-tilt').tilt({
+  reset: false
 })

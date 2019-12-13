@@ -91,7 +91,6 @@ function slugthis(){
 
 $(function(){
   $('.js-tilt').tilt({
-    scale: 1.1,
-    speed: 2000
+    scale: 1.2
 })
 })

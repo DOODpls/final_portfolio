@@ -88,10 +88,3 @@ function slugthis(){
   document.getElementById('blogslug').value = slugify(blogtitle.value);
 }
 
-
-$(function(){
-  $('.js-tilt').tilt({
-    scale: 1.1,
-    speed: 2000
-})
-})

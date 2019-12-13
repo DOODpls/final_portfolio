@@ -92,6 +92,7 @@ function slugthis(){
 $(function(){
   $('.js-tilt').tilt({
     scale: 1.1,
-    speed: 2000
+    speed: 2000,
+    easing: "cubic-bezier(.03,.98,.52,.99)"
 })
 })

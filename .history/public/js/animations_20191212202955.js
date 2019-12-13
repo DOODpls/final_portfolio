@@ -30,6 +30,7 @@ try{
 function childnum(){
   var x = projs.children.length;
   var childrens = [].slice.call(projs.children);
+  console.log(childrens);
   for(i=0; i <= x; i++){
     if(i % 2 == 0){
         try{
@@ -88,10 +89,6 @@ function slugthis(){
   document.getElementById('blogslug').value = slugify(blogtitle.value);
 }
 
-
-$(function(){
-  $('.js-tilt').tilt({
-    scale: 1.1,
-    speed: 2000
-})
+$('.js-tilt').tilt({
+  reset: false
 })
