@@ -7,42 +7,42 @@ const pagesInfo = {
         "title" : "Homepage",
         "url" : "https://techhome.netlify.com/",
         "description" : "A basic homepage with 4 section.",
-        "photo" : "images/projs/homepage.png"
+        "photo" : "images/projs/homepage.jpg"
       },{
         "title" : "Photograpiya",
         "url" : "https://photograpiya.netlify.com/",
         "description" : "A 4 page portfolio/gallery made with HTML and CSS",
-        "photo" : "images/projs/photograpiya.png"
+        "photo" : "images/projs/photograpiya.jpg"
       },{
         "title" : "Tiles!",
         "url" : "https://jstiles.netlify.com/",
         "description" : "A assignment which we have to fill the section with tiles by using loop",
-        "photo" : "images/projs/tiles.png"
+        "photo" : "images/projs/tiles.jpg"
       },{
         "title" : "Mobile Menu",
         "url" : "https://jsmobilemenu.netlify.com/",
         "description" : "This assingment demonstrate how we make mobile menus using media query and JavaScript",
-        "photo" : "images/projs/mobilemenu.png"
+        "photo" : "images/projs/mobilemenu.jpg"
       },{
         "title" : "The Weathering",
         "url" : "http://theweathering.netlify.com/",
         "description" : "A web app that shows you the current weather on your location, and you can also search for other cities",
-        "photo" : "images/projs/theweathering.png"
+        "photo" : "images/projs/theweathering.jpg"
       },{
         "title" : "Darkblogs",
         "url" : "https://blog-secret.herokuapp.com/",
         "description" : "A blog posting website made with NodeJS",
-        "photo" : "images/projs/darkblogs.png"
+        "photo" : "images/projs/darkblogs.jpg"
       },{
         "title" : "MacEwan",
         "url" : "https://dev-macewan-university.pantheonsite.io/",
         "description" : "A website remake using Wordpress.",
-        "photo" : "images/projs/macewan.png"
+        "photo" : "images/projs/macewan.jpg"
       },{
         "title" : "Jekyll Portfolio",
         "url" : "https://doodpls.github.io/",
         "description" : "A portfolio made with Jekyll",
-        "photo" : "images/projs/jekyll.png"
+        "photo" : "images/projs/jekyll.jpg"
       },
     ],
     skills: [
