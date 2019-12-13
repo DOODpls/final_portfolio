@@ -143,22 +143,11 @@ legend{
 }
 
 .modifyblogs{
-  width: 50%;
+  width: 40%;
 }
 
 @media screen and (max-width: 1000px) {
   .modifyblogs{
     width: 60%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .modifyblogs{
-    width: 80%;
-  }
-}
-@media screen and (max-width: 300px) {
-  .modifyblogs{
-    width: 90%;
   }
 }
