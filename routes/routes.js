@@ -59,7 +59,7 @@ pgrtrs.get('/admin/:slug', async function(request,response){
       pginfo: pagesInfo.index
     })
 })
-
+//
 pgrtrs.get('/blogs/:slug', async function(request,response){
   const blogpost = await bloglist
   .where('slug', request.params.slug);
