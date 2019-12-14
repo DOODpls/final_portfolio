@@ -21,23 +21,24 @@ pgrtrs.get('/', function(request, response){
 })
 
 
-pgrtrs.get('/login', function(request, response){
-  response.render('adminlogin', {
-    pginfo: pagesInfo.admin
-  })
-})
-pgrtrs.post('/admin', async function(request, response){
-  const blogs = await bloglist.find();
-  if (request.body.password != "12345"){
-    response.redirect('login')
-  }else{
-    response.render('admin', {
-      pginfo: pagesInfo.admin,
-      blogss: blogs,
-    })
-  }
+//pgrtrs.get('/login', function(request, response){
+//  response.render('adminlogin', {
+//    pginfo: pagesInfo.admin
+//  })
+//})
+//pgrtrs.post('/admin', async function(request, response){
+//  const blogs = await bloglist.find();
+  //it doesnt have encryption yet, will add one soon
+//  if (request.body.password != "12345"){
+//    response.redirect('login')
+//  }else{
+//    response.render('admin', {
+//      pginfo: pagesInfo.admin,
+//      blogss: blogs,
+//    })
+//  }
   
-})
+//})
 
 pgrtrs.get('/blogs', async function(request, response){
   const blogs = await bloglist.find();
