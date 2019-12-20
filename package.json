@@ -2,7 +2,7 @@
   "name": "final_portfolio",
   "version": "1.0.0",
   "engines": {
-    "node": "v12.13.0"
+    "node": "v10.17.0"
   },
   "description": "Final portfolio",
   "main": "app.js",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/DOODpls/final_portfolio#readme",
   "dependencies": {
-    "bcrypt": "^3.0.0",
+    "bcrypt": "^3.0.7",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
