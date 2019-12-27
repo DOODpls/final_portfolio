@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel='icon' href='/images/logo/favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+  <script src="https://kit.fontawesome.com/8092725ea1.js" crossorigin="anonymous"></script>
+  <title><%= pginfo.title %></title>
+</head>
+<body>
+  <div class="admin-wrapper">
+    <div class="side-menu">
+      <div class="admin-div">
+        <h1 class="adminheader">ADMIN</h1>
+      </div>
+      <button class="taboptions" id="new-blog" onclick="tabops(event, 'post-container')">New Blog Post</button>
+      <button class="taboptions" id="blog-list" onclick="tabops(event, 'blogpost-outer-container')">Blog List</button>
+      <button class="taboptions" id="new-proj" onclick="tabops(event, 'projects-outer-cont')">Post New Project</button>
+      <button class="taboptions" id="manage-proj">Manage Project</button>
+      <div class="logout">
+        <a href="/logout"><p>Log Out <i class="fas fa-sign-out-alt"></i></p></a> 
+      </div>
+    </div>
+    <div class="post-outer-cont">
+      <div class="post-inner-cont">
+        <div class="post-container tabcontent" id="post-container">
+          <h1>New Post</h1>
+          <form method="POST" class="addnew">
+            <fieldset class="fieldset">
+                <div class="parts-cont">
+                    <div class="part1">
+                      <div>
+                        <h3>Title</h3>
+                        <input type="text" name="blogtitle" id="blogtitle" class="blogtitle" onkeyup="slugthis()" required>
+                      </div>
+                      <div>
+                        <h3>Date</h3>
+                        <input type="date" name="blogdate" id="blogdate" class="blogdate" required>
+                      </div>
+                      <div>
+                        <h3>Category
+                          </h3><input list="category" name="category" class="category" />
+                          <datalist id="category">
+                            <% blogss.forEach(function(items){ %>
+                              <option value="<%= return items.filter((a, b) => items.indexOf(a) === b) %>">
+                            <% }) %>
+                          </datalist>
+                      </div>
+                    </div>
+                    <div class="part2">
+                      <div>
+                        <h3>Summary</h3>
+                        <input type="text" name="blogsumm" id="blogsumm" class="blogsumm" required>
+                      </div>
+                      <div>
+                        <h3>Slug</h3>
+                        <input type="text" name="blogslug" id="blogslug" class="blogslug" readonly="readonly" required>
+                      </div>
+                      <div class="tagshldr">
+                        <h3>Tags</h3>
+                        <input type="text" name="tags" id="tags" class="tags" data-role="tagsinput"></input>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <legend>Content</legend>
+                    <textarea name="blogcontent" id="blogcontent" class="blogcontent"  cols="30" rows="10" required></textarea>
+                  </div>
+                  <div class="buttoncont">
+                    <input type="submit" value="Post" class="buttonadd" formaction="/admin/Posted">
+                  </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="blogpost-outer-container tabcontent" id="blogpost-outer-container">
+          <div class="blogpost-inner-container">
+            <h1>Blogs</h1>
+            <div class="collection-container">
+              <% blogss.slice().reverse().forEach(function(items){ %>
+                <div class="blogcontainer">
+                  <a href="admin/<%= items.slug %>"><h2 class="blog-title"><%= items.title %></h2></a>
+                  <div class="blog-info">
+                    <p class="blog-date"><%= items.date %></p>
+                    <p class="blog-content" id="blog-content"><%= items.blog_summary %></p>
+                  </div>
+                </div>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+        <div class="new-projects-outer-cont tabcontent" id="projects-outer-cont">
+          <div class="new-projects-inner-cont">
+            <div class="new-projects-container">
+              <h1>New Project</h1>
+              <form action="/submitproject" method="POST">
+              <fieldset class="fieldset">
+                <div>
+                  <legend></legend>
+                  <input type="text">
+                </div>
+                <div>
+                  <legend></legend>
+                  <input type="text">
+                </div>
+                <div>
+                  <legend></legend>
+                  <input type="text">
+                </div>
+                <div>
+                  <legend></legend>
+                  <input type="text">
+                </div>
+              </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="/js/animations.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+</html>
