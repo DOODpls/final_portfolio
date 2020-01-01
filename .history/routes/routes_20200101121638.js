@@ -88,7 +88,7 @@ pgrtrs.get('/search', async function(request, response){
   
   searchq = request.query.q
   url = request.originalUrl;
-  title= "Search Result"
+  title= "-Search Result-"
   try{
     if(searchq == ""){
       response.redirect('/search/404');
@@ -110,7 +110,7 @@ pgrtrs.get('/tag/:items', async function(request, response){
   
   searchq = request.params.items;
   url = request.originalUrl;
-  title= "Tag"
+  title= "-Tag-"
   try{
     if(searchq == ""){
       response.redirect('/search/404');
@@ -131,7 +131,7 @@ pgrtrs.get('/tag/:items', async function(request, response){
 pgrtrs.get('/category/:items', async function(request, response){
   searchq = request.params.items;
   url = request.originalUrl;
-  title= "Category"
+  title= "Category: "
   try{
     if(searchq == ""){
       response.redirect('/search/404');
