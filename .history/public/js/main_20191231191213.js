@@ -13,12 +13,13 @@ var skillsflex = new ScrollMagic.Scene({
     triggerElement: '#skills-flex'
   })
   .setClassToggle('#skills-logo-desc', 'fade-in')
+  .addIndicators()
   .reverse(false)
   .addTo(controller);
 
   var navblack = new ScrollMagic.Scene({
     triggerElement: '#skills-outer-cont',
-    triggerHook: 0.72
+    triggerHook: 0.8
   })
   .setClassToggle('#nav-full-cont', 'navch')
   .addTo(controller);
@@ -27,11 +28,11 @@ var skillsflex = new ScrollMagic.Scene({
     triggerElement: '#skills-outer-cont'
   })
   .setClassToggle('#burger', 'awhite')
-  .addTo(controller);
+  .addTo(controller);,
+  triggerHook: 0.8
 
   var navlinkswhite = new ScrollMagic.Scene({
-    triggerElement: '#skills-outer-cont',
-    triggerHook: 0.72
+    triggerElement: '#skills-outer-cont'
   })
   .setClassToggle('#navlink', 'awhite')
   .addTo(controller);

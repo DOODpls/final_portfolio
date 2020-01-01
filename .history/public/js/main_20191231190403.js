@@ -5,7 +5,7 @@ $(document).ready(function(){
   var skillsetbaner = new ScrollMagic.Scene({
     triggerElement: '#top-banner'
   })
-  .setClassToggle('#top-banner', 'fade-in')
+  .setClassToggle('#top-banner', 'fade-in'),
   .reverse(false)
   .addTo(controller);
 
@@ -17,8 +17,7 @@ var skillsflex = new ScrollMagic.Scene({
   .addTo(controller);
 
   var navblack = new ScrollMagic.Scene({
-    triggerElement: '#skills-outer-cont',
-    triggerHook: 0.72
+    triggerElement: '#skills-outer-cont'
   })
   .setClassToggle('#nav-full-cont', 'navch')
   .addTo(controller);
@@ -30,8 +29,7 @@ var skillsflex = new ScrollMagic.Scene({
   .addTo(controller);
 
   var navlinkswhite = new ScrollMagic.Scene({
-    triggerElement: '#skills-outer-cont',
-    triggerHook: 0.72
+    triggerElement: '#skills-outer-cont'
   })
   .setClassToggle('#navlink', 'awhite')
   .addTo(controller);

@@ -13,6 +13,7 @@ var skillsflex = new ScrollMagic.Scene({
     triggerElement: '#skills-flex'
   })
   .setClassToggle('#skills-logo-desc', 'fade-in')
+  .addIndicators()
   .reverse(false)
   .addTo(controller);
 
