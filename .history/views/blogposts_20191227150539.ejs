@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head") %>
+<body>
+  <%- include("partials/header") %>
+    <div class="blog-banner-container">
+      <div class="blog-banner-inner-container">
+        <div class="blog-inner-container-text"><%= blogpost.title%> </div>
+        <div id="subtitle" class="subtitle"><%= blogpost.date %></div>
+      </div>
+    </div>
+    <div class="post-outer-cont">
+      <div class="post-inner-cont">
+        <div class="post-container" id="post-container">
+          <p class="invitext" id="invitext"><%= blogcont %></p>
+          <div class="post-content ng-binding" id="post-content" ng-bind-html="myHTML"> </div>
+        </div>
+        <div class="tags">
+          <% blogpost.tags.forEach(function(items){ %>
+            <a href=""><p><%= items %></p></a>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  <%- include("partials/footer") %>
+</body>
+<%- include("partials/scripts") %>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Search Result - <%= query %></title>
+  <%- include("partials/headforsearch") %>
+<body>
+  <%- include("partials/header") %>
+  <div class="blog-banner-container">
+      <div class="blog-banner-inner-container">
+        <div class="blog-inner-container-text">Search Result - "<%= query %>"</div>
+        <div id="subtitle" class="subtitle">  </div>
+      </div>
+    </div>
+    <div class="searchdiv">
+      <h3>Search</h3>
+    <form action="search/" class="searchform" method="GET">
+      <input type="search" name="q" id="searchfield" class="searchfield" placeholder="Search Blogs">
+      <i class="fas fa-search searchicon"></i>
+    </form>
+    </div>
+    <div class="searchres-outer-div">
+      <div class="searchres-inner-div">
+        <% blogres.forEach(function(items){ %>
+          <div class="blogcontainer">
+            <a href="blogs/<%= items.slug %>"><h2 class="blog-title"><%= items.date %>: <%= items.title %></h2></a>
+            <p class="blog-content" id="blog-content"><%= items.blog_summary %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  <%- include("partials/footer") %>
+</body>
+<%- include("partials/scripts") %>
+</html>
