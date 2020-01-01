@@ -425,6 +425,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 1rem;
 }
 .footer-social{
   display: flex;
@@ -622,8 +623,6 @@ a{
   .footer-inner-cont{
     flex-wrap: wrap;
     width: 80%;
-  }
-  .footer-inner-cont > .footer-name, .footer-inner-cont > .copyright{
     margin: 0;
   }
   .footer-social{

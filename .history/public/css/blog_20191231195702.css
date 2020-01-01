@@ -43,7 +43,7 @@
   width: 100%;
 }
 .searchform{
-  width: 70%;
+  width: 550px;
   height: 35px;
   margin-bottom: 40px;
   border: 2px solid black;
@@ -216,6 +216,10 @@
   .blog-outer-cont > h1{
     margin-top: 0px;
   }
+  .searchform{
+    width: 70%;
+  }
+
 }
 @media screen and (max-width: 600px) {
   .searchres-inner-div{

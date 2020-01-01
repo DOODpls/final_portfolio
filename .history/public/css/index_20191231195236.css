@@ -415,7 +415,7 @@ body {
 /* +++++++++++++++++++++++++++++FOOTER++++++++++++++++++++++++++ */
 
 .footer{
-  height: auto;
+  height: 7vh;
   background-color: black;
   display: flex;
   align-items: center;
@@ -425,6 +425,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 1rem;
 }
 .footer-social{
   display: flex;

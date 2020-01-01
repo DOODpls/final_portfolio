@@ -17,7 +17,7 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
   min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
@@ -425,6 +425,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 1rem;
 }
 .footer-social{
   display: flex;
@@ -616,15 +617,9 @@ a{
   .skill-description{
     font-size: 12px;
   }
-  .footer{
-    height: auto;
-  }
   .footer-inner-cont{
     flex-wrap: wrap;
     width: 80%;
-  }
-  .footer-inner-cont > .footer-name, .footer-inner-cont > .copyright{
-    margin: 0;
   }
   .footer-social{
     padding-left: 0;

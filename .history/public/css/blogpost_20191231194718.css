@@ -25,7 +25,6 @@
 .tags{
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   margin-bottom: 60px;
   width: auto;
 }
