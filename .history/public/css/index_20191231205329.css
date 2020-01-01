@@ -17,7 +17,6 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 5rem;
   min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
@@ -415,7 +414,7 @@ body {
 /* +++++++++++++++++++++++++++++FOOTER++++++++++++++++++++++++++ */
 
 .footer{
-  height: 5rem;
+  height: auto;
   background-color: black;
   display: flex;
   align-items: center;
@@ -617,7 +616,7 @@ a{
     font-size: 12px;
   }
   .footer{
-    height: 5rem;
+    height: auto;
   }
   .footer-inner-cont{
     flex-wrap: wrap;

@@ -617,7 +617,7 @@ a{
     font-size: 12px;
   }
   .footer{
-    height: 5rem;
+    height: auto;
   }
   .footer-inner-cont{
     flex-wrap: wrap;

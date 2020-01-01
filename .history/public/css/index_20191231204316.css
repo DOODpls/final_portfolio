@@ -66,6 +66,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
@@ -74,6 +75,7 @@ body {
   transition: .5s;
 }
 .navch{
+  height: 70px;
   background-color: black;
   transition: .5s;
   color: white;
@@ -415,7 +417,7 @@ body {
 /* +++++++++++++++++++++++++++++FOOTER++++++++++++++++++++++++++ */
 
 .footer{
-  height: 5rem;
+  height: auto;
   background-color: black;
   display: flex;
   align-items: center;
@@ -617,7 +619,7 @@ a{
     font-size: 12px;
   }
   .footer{
-    height: 5rem;
+    height: auto;
   }
   .footer-inner-cont{
     flex-wrap: wrap;

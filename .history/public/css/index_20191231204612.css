@@ -415,7 +415,7 @@ body {
 /* +++++++++++++++++++++++++++++FOOTER++++++++++++++++++++++++++ */
 
 .footer{
-  height: 5rem;
+  height: auto;
   background-color: black;
   display: flex;
   align-items: center;
@@ -617,7 +617,7 @@ a{
     font-size: 12px;
   }
   .footer{
-    height: 5rem;
+    height: auto;
   }
   .footer-inner-cont{
     flex-wrap: wrap;
