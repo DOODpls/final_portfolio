@@ -37,7 +37,7 @@ const pagesInfo = {
         "title" : "Code Cafe",
         "url" : "https://codecafe.netlify.com",
         "description" : "A Coffee shop WordPress website that we build for out project",
-        "photo" : "images/projs/codecafephoto.jpg"
+        "photo" : "images/projs/codecafe.jpg"
       },
     ],
     skills: [
