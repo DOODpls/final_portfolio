@@ -89,12 +89,6 @@ function slugthis(){
 }
 
 
-$(function(){
-  $('.js-tilt').tilt({
-    scale: 1.1,
-    speed: 2000
-})
-})
 
 
 function tabops(evt, optionname){

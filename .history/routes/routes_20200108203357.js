@@ -67,12 +67,11 @@ pgrtrs.get('/blogs', async function(request, response){
     })
 })
 
-
 pgrtrs.get("/get-post/:start/:limit", async function (request, response){
   var blogs
   if ( url == '/search/?q='+searchq ){
     blogs = await bloglist.find().or([{title: {$regex: searchq, $options: "i"}}, {category: {$regex: searchq, $options: "i"}}, {tags: {$regex: searchq, $options: "i"}}, {blog_cont: {$regex: searchq, $options: "i"}}]).sort({"_id": -1}).skip(parseInt(request.params.start)).limit(parseInt(request.params.limit))
-  } else if (url == '/blogs' || url == '/blogs/'){
+  } else if (url == '/blogs'){
     blogs = await bloglist.find().sort({"date": -1,"_id": -1}).skip(parseInt(request.params.start)).limit(parseInt(request.params.limit));
   } else if (url == '/category/'+searchq){
     blogs = await bloglist.find().or([{category: {$regex: searchq, $options: "i"}}]).sort({"_id": -1}).skip(parseInt(request.params.start)).limit(parseInt(request.params.limit));
@@ -148,14 +147,7 @@ pgrtrs.get('/category/:items', async function(request, response){
         const blogs = await bloglist.find().or([{category: {$regex: searchq, $options: "i"}}]).sort({"_id": -1}).limit(2);
         const results = await bloglist.distinct('tags');
         const categories = await bloglist.distinct('category');
-        response.render('blogs',{
-        blogss: blogs,
-        pagettl: title,
-        pginfo: pagesInfo.index,
-        category: categories,
-        tags: results
-      }
-      )
+        response.redirect('blogs')
     }
   }catch{
     response.redirect('/search/404');

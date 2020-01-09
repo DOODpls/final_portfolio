@@ -609,7 +609,7 @@ a{
 }
 @media screen and (max-width: 550px) {
   .footer{
-    height: 5rem;
+    height: 6rem;
   }
   .footer-inner-cont{
     flex-wrap: wrap;

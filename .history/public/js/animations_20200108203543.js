@@ -116,6 +116,7 @@ function getNext(){
     method: "GET",
     success: function(response){
       renderPosts(response);
+      console.log(response)
     }
   });
 }

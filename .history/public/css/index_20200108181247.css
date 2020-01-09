@@ -614,6 +614,7 @@ a{
   .footer-inner-cont{
     flex-wrap: wrap;
     width: 80%;
+    margin-bottom: 20PX;
   }
   .footer-inner-cont > .footer-name, .footer-inner-cont > .copyright{
     margin: 0;

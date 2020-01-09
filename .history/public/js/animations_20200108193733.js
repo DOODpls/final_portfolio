@@ -145,13 +145,13 @@ function renderPosts(resss){
 }
 
 
-$(window).scroll(function(){
-  if($(window).scrollTop() >= $(document).height() - $(window).height() - 
-  50
-  ){
-    getNext();
-  }
-})
+// $(window).scroll(function(){
+//   if($(window).scrollTop() >= $(document).height() - $(window).height() - 
+//   50
+//   ){
+//     getNext();
+//   }
+// })
 
 function nores(){
   var couter = document.querySelector('#blog-inner-cont');

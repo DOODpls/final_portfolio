@@ -2,14 +2,16 @@
   <div class="skills-inner-cont">
     <div class="top-banner" id="top-banner"> SKILLSET</div>
     <div class="skills-flex" id="skills-flex">
+      <script>
+        </script>
       <% pginfo.skills.forEach(function(sklz){ %>
-        <div data-tilt class="skills-logo-desc" id="skills-logo-desc">
+        <div class="skills-logo-desc" id="skills-logo-desc" data-tilt>
           <div class="skill-logo"><i class="<%= sklz.class %>"></i></div>
           <div class="skill-description"><p><%= sklz.desc %></p></div>
         </div>
       <% }) %>
       <% pginfo.extskills.forEach(function(sklzext){ %>
-        <div data-tilt class="skills-logo-desc" id="skills-logo-desc">
+        <div class="skills-logo-desc" id="skills-logo-desc" data-tilt>
           <div class="skill-logo"> <img src="<%= sklzext.imgscr %>" alt="Photoshop" class="external-logo"> </div>
           <div class="skill-description"><p><%= sklzext.desc %></p></div>
         </div>

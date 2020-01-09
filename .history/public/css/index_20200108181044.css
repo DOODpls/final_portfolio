@@ -618,14 +618,6 @@ a{
   .footer-inner-cont > .footer-name, .footer-inner-cont > .copyright{
     margin: 0;
   }
-  .footer-social{
-    padding-left: 0;
-  }
-  .footer-social > li{
-    font-size: 6vw;
-    width: 8vw;
-    height: 8vw;
-  }
 }
 @media screen and (max-width: 500px) {
   .skills-inner-cont{

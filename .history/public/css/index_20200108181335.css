@@ -431,7 +431,7 @@ body {
 /* +++++++++++++++++++++++++++++FOOTER++++++++++++++++++++++++++ */
 
 .footer{
-  height: 5rem;
+  height: 6rem;
   background-color: black;
   display: flex;
   align-items: center;

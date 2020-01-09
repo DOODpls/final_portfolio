@@ -7,7 +7,6 @@ html {
   scroll-behavior: smooth;
   position: relative;
 }
-
 *,
 *:before,
 *:after {
@@ -17,8 +16,6 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 5rem;
-  min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 .anchor{
@@ -609,7 +606,7 @@ a{
 }
 @media screen and (max-width: 550px) {
   .footer{
-    height: 5rem;
+    height: 6rem;
   }
   .footer-inner-cont{
     flex-wrap: wrap;

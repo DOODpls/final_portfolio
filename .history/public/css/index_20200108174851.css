@@ -200,9 +200,6 @@ body {
   transition: all .5s ease-out;
   transform-style: preserve-3d;
 }
-.skill-description{
-  transform: translateZ(20px);
-}
 .skill-logo{
   font-size: 60px;
   height: 80px;
@@ -216,6 +213,9 @@ body {
   margin: 10px;
   transition: .3s;
   transform-style: preserve-3d;
+}
+.tilt{
+  transform: translateZ(30px);
 }
 .skills-flex{
   display: flex;
@@ -607,26 +607,7 @@ a{
   }
 
 }
-@media screen and (max-width: 550px) {
-  .footer{
-    height: 5rem;
-  }
-  .footer-inner-cont{
-    flex-wrap: wrap;
-    width: 80%;
-  }
-  .footer-inner-cont > .footer-name, .footer-inner-cont > .copyright{
-    margin: 0;
-  }
-  .footer-social{
-    padding-left: 0;
-  }
-  .footer-social > li{
-    font-size: 6vw;
-    width: 8vw;
-    height: 8vw;
-  }
-}
+
 @media screen and (max-width: 500px) {
   .skills-inner-cont{
     margin-top: 100px;
@@ -654,7 +635,16 @@ a{
   .skill-description{
     font-size: 12px;
   }
-  
+  .footer{
+    height: 5rem;
+  }
+  .footer-inner-cont{
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .footer-inner-cont > .footer-name, .footer-inner-cont > .copyright{
+    margin: 0;
+  }
   .footer-social{
     padding-left: 0;
   }

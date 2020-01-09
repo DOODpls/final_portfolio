@@ -20,7 +20,7 @@
           </form>
           </div>
           <div class="catdiv">
-            <a href="/blogs"><h3>All Blogs</h3></a>
+            <a href="/blogs/"><h3>All Blogs</h3></a>
             <br>
             <h3>Category</h3>
           <div class="cat-list">
@@ -43,10 +43,7 @@
         <h1><%= pagettl %></h1>
         <div class="blog-inner-cont" id="blog-inner-cont">
           <% blogss.forEach(function(items){ %>
-            <div class="blogcontainer">
-              <a href="/blogs/<%= items.slug %>"><h2 class="blog-title"><%= items.date %>: <%= items.title %></h2></a>
-            <p class="blog-content" id="blog-content"><%= items.blog_summary %></p>
-            </div>
+            
           <% }) %>
         </div>
         <script>

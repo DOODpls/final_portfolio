@@ -134,7 +134,7 @@ function renderPosts(resss){
   if (resss.blogss.length > 0){
     var html = "";
     for(var a = 0; a < resss.blogss.length; a++){
-      html += '<div class="blogcontainer">';
+      html += '<div data-tilt class="blogcontainer">';
       html += '<a href="/blogs/' + resss.blogss[a].slug + '"><h2 class="blog-title">' + resss.blogss[a].date + ': ' +  resss.blogss[a].title + '</h2></a>';
       html += '<p class="blog-content" id="blog-content"> '+ resss.blogss[a].blog_summary + '</p>';
       html += '</div>';
