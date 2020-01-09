@@ -45,7 +45,7 @@ pgrtrs.post('/admin', (req, res, next) => {
 pgrtrs.get('/admin', ensureAuthenticated, async function(request, response){
  const blogs = await bloglist.find();
  const categories = await bloglist.distinct('category');
- const tagss = await bloglist.distinct('tags')
+ const tagss = await bloglist.find('tags')
   response.render('admin', {
     pginfo: pagesInfo.admin,
     blogss: blogs,
@@ -168,14 +168,12 @@ pgrtrs.get('/category/:items', async function(request, response){
 pgrtrs.get('/admin/:slug', ensureAuthenticated, async function(request,response){
   const blogpost = await bloglist
   .where('slug', request.params.slug);
-  const tagss = await bloglist.distinct('tags')
   bloglist.distinct('category', function(err, results){
     response.render('adminblogpost', {
       blogpost: blogpost[0],
       title: blogpost[0].title,
       pginfo: pagesInfo.index,
-      categories: results,
-      tags: tagss
+      categories: results
     })
   });
 })
@@ -213,7 +211,7 @@ pgrtrs.post('/admin/updated',ensureAuthenticated, async function(request, respon
   const blog = request.body.blogcontent;
   const summary = request.body.blogsumm;
   const newslug = request.body.blogslug;
-  const tags = request.body.tagsss;
+  const tags = request.body.tags;
   const categoryy = request.body.category;
 
   const newpost = new bloglist(
@@ -242,7 +240,7 @@ pgrtrs.post('/admin/posted', ensureAuthenticated, async function(request, respon
   const blog = request.body.blogcontent;
   const summary = request.body.blogsumm;
   const slug = request.body.blogslug;
-  const tags = request.body.tagsss;
+  const tags = request.body.tags;
   const category = request.body.category
   var tagsarray = tags.split(',');
 

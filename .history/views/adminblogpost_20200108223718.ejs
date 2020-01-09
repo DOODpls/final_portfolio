@@ -58,12 +58,13 @@
                   <h3>Tags</h3>
                   <input type="text" name="tagsss" id="tagsss" class="tagsss" value="<%= blogpost.tags %>">
                   <script>
-                          var tagsres = "<%= tags %>"
-                          var tagssa = tagsres.split(',')
+                    console.log("<%= blogpost.tags %>")
+                          var tagsres = "<%= blogpost.tags %>"
+                          var tagss = tagsres.split(',')
                           $('#tagsss').tagsInput({
 
                             'autocomplete': {
-                              source: tagssa
+                              source: tagsres
                             },
                             // min/max number of characters
                             minChars: 0,

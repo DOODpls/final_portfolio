@@ -7,7 +7,8 @@
       <div class="blog-banner-inner-container">
         <div class="blog-inner-container-text"><%= blogpost.title%> </div>
         <div class="subtitle-container">
-          <div id="subtitle" class="subtitle"><%= blogpost.date %>&nbsp; <i class="fas fa-long-arrow-alt-right"></i> &nbsp;<a href="/category/<%= blogpost.category %>"><%= blogpost.category%></a></div>
+          <div id="subtitle" class="subtitle"><%= blogpost.date %>&nbsp; <i class="fas fa-long-arrow-alt-right"></i> &nbsp;<a href="/category/<%= blogpost.category %>" class="subtitle"><%= blogpost.category%></a></div>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <div class="subtitle"><a href="/blogs" class="subtitle"> <i class="fas fa-long-arrow-alt-left">&nbsp;</i> Back to blogs</a></div>
         </div>
       </div>
     </div>

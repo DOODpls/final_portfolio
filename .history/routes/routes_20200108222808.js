@@ -168,14 +168,12 @@ pgrtrs.get('/category/:items', async function(request, response){
 pgrtrs.get('/admin/:slug', ensureAuthenticated, async function(request,response){
   const blogpost = await bloglist
   .where('slug', request.params.slug);
-  const tagss = await bloglist.distinct('tags')
   bloglist.distinct('category', function(err, results){
     response.render('adminblogpost', {
       blogpost: blogpost[0],
       title: blogpost[0].title,
       pginfo: pagesInfo.index,
-      categories: results,
-      tags: tagss
+      categories: results
     })
   });
 })

@@ -6,14 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/admin.css">
   <link rel='icon' href='/images/logo/favicon.ico' type='image/x-icon'/ >
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="/js/jquery.tagsinput-revisited.js"></script>
-  <link rel="stylesheet" href="/css/jquery.tagsinput-revisited.css">
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
   <script src="https://kit.fontawesome.com/8092725ea1.js" crossorigin="anonymous"></script>
   <title><%= pginfo.title %></title>
 </head>
@@ -50,7 +44,7 @@
                       <div>
                         <legend>Category</legend>
                         <input list="category" name="category" class="category"/>
-                          <datalist id="category" >
+                          <datalist>
                             <% categories.forEach(function(items){ %>
                               <option value="<%= items %>">
                             <% }) %>
@@ -68,29 +62,13 @@
                       </div>
                       <div class="tagshldr">
                         <legend>Tags</legend>
-                        <input type="text" name="tagsss" id="tagsss" class="tagsss">
-                        <script>
-                          var tagsres = "<%= tags %>"
-                          var tagss = tagsres.split(',')
-                          $('#tagsss').tagsInput({
-
-                            'autocomplete': {
-                              source: tagss
-                            },
-                            // min/max number of characters
-                            minChars: 0,
-                            maxChars: null,
-
-                            // max number of tags
-                            limit: null,
-
-                            // RegExp
-                            validationPattern: null,
-
-                            // duplicate validation
-                            unique: true
-                            });
-                        </script>
+                        <input type="text" name="tags" id="tags" class="tags" data-role="tagsinput">
+                        <datalist>
+                          <% tags.forEach(function(items){ %>
+                            <option value="<%= items %>">
+                          <% }) %>
+                        </datalist>
+                        </input>
                       </div>
                     </div>
                   </div>
@@ -152,4 +130,6 @@
   </div>
 </body>
 <script src="/js/animations.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 </html>

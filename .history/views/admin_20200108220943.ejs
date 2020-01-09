@@ -70,12 +70,12 @@
                         <legend>Tags</legend>
                         <input type="text" name="tagsss" id="tagsss" class="tagsss">
                         <script>
-                          var tagsres = "<%= tags %>"
-                          var tagss = tagsres.split(',')
+
+                          console.log(JSON.stringify("<%= tags %>", null, 4))
                           $('#tagsss').tagsInput({
 
                             'autocomplete': {
-                              source: tagss
+                              source: "<%= tags %>"
                             },
                             // min/max number of characters
                             minChars: 0,
@@ -152,4 +152,6 @@
   </div>
 </body>
 <script src="/js/animations.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
 </html>
