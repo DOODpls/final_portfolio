@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="/css/jquery.tagsinput-revisited.css">
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-lite.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote-lite.min.js"></script>
   <script src="https://kit.fontawesome.com/8092725ea1.js" crossorigin="anonymous"></script>
   <title><%= pginfo.title %></title>
 </head>
@@ -94,9 +96,25 @@
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div style="width: 50vw;">
                     <legend>Content</legend>
-                    <textarea name="blogcontent" id="blogcontent" class="blogcontent"  cols="30" rows="10" required></textarea>
+                    <textarea id="summernote" name="blogcontent"></textarea>
+                    <script>
+                      $('#summernote').summernote({
+                        placeholder: 'Hello stand alone ui',
+                        tabsize: 2,
+                        height: 400,
+                        toolbar: [
+                          ['style', ['style']],
+                          ['font', ['bold', 'underline', 'clear']],
+                          ['color', ['color']],
+                          ['para', ['ul', 'ol', 'paragraph']],
+                          ['table', ['table']],
+                          ['insert', ['link', 'picture', 'video']],
+                          ['view', ['fullscreen', 'codeview', 'help']]
+                        ]
+                      });
+                    </script>
                   </div>
                   <div class="buttoncont">
                     <input type="submit" value="Post" class="buttonadd" formaction="/admin/Posted">

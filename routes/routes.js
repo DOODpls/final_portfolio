@@ -260,7 +260,9 @@ pgrtrs.post('/admin/posted', ensureAuthenticated, async function(request, respon
   );
   newpost.save(function (err, newpost){
 
-      if (err) return handleError(err);
+      if (err){
+        console.log(err)
+      }
     response.redirect('/admin');
    });
 })
