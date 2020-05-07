@@ -4,11 +4,6 @@ const pagesInfo = {
     link: '/',
     projects: [
       {
-        "title" : "Homepage",
-        "url" : "https://techhome.netlify.com/",
-        "description" : "A basic homepage with 4 section.",
-        "photo" : "images/projs/homepage.jpg"
-      },{
         "title" : "Photograpiya",
         "url" : "https://photograpiya.netlify.com/",
         "description" : "A 4 page portfolio/gallery made with HTML and CSS",
@@ -18,11 +13,6 @@ const pagesInfo = {
         "url" : "https://jstiles.netlify.com/",
         "description" : "A assignment which we have to fill the section with tiles by using loop",
         "photo" : "images/projs/tilersss.jpg"
-      },{
-        "title" : "Mobile Menu",
-        "url" : "https://jsmobilemenu.netlify.com/",
-        "description" : "This assingment demonstrate how we make mobile menus using media query and JavaScript",
-        "photo" : "images/projs/mobilemenu.jpg"
       },{
         "title" : "The Weathering",
         "url" : "http://theweathering.netlify.com/",
@@ -59,6 +49,12 @@ const pagesInfo = {
       },{
         "class" : "fab fa-wordpress",
         "desc" : "WordPress"
+      },{
+        "class" : "fab fa-angular",
+        "desc" : "AngularJS"
+      },{
+        "class" : "fab fa-react",
+        "desc" : "ReactJS"
       }
     ],
     extskills: [

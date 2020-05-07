@@ -326,7 +326,7 @@ body {
 }
 .projlk{
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .project-preview-d{
   grid-column: 1/3;
